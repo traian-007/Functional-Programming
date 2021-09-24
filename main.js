@@ -8,7 +8,7 @@ function fibonacciRecursiv(num){
     b = arr[v]
     v++
     if(num <= 1){
-        return console.log(arr);
+        return console.log(b);
     }
     return fibonacciRecursiv(num - 1) 
 }
