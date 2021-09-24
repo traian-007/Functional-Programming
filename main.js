@@ -1,18 +1,19 @@
-const fibonacci = (n) => {
-    let arr =[]
-    let a = 1
-    let b = 0
-    for(let i = 0; i < n; i++){            
-        arr.push(a)      
-        a = arr[i]+ b 
-        b = arr[i] 
+let arr =[]
+let a = 1
+let b = 0
+let v = 0
+function fibonacciRecursiv(num){
+    arr.push(a)      
+    a = arr[v]+ b 
+    b = arr[v]
+    v++
+    if(num <= 1){
+        return console.log(arr);
     }
-    return arr
+    return fibonacciRecursiv(num - 1) 
 }
-console.log(fibonacci(8))
-// 1 1 2 3 5 8 13
 
-
+fibonacciRecursiv(6)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // const arr2 = [1,2,3,4,5,6]
